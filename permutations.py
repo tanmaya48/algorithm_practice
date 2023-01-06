@@ -1,5 +1,33 @@
 
 
+
+def permutations_indexed(N = 4,R = 3):
+    numbers = list((range(N)))
+    current_permutations = [[i] for i in range(N)]
+
+    current_r = 1
+    while True:
+        if current_r == R:
+            return current_permutations
+        new_permutations = []
+        for num in numbers:
+            for permutation in current_permutations:
+                permutation = permutation.copy()
+                if num in permutation:
+                    continue
+                permutation.append(num)
+                new_permutations.append(permutation)
+        
+        current_r+=1
+        current_permutations = new_permutations
+
+            
+        
+
+
+
+
+
 def get_permutations(elements):
 
     permutations = []

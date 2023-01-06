@@ -86,7 +86,7 @@ def get_best_chain(chain):
     matrix_dict = get_matrixes(chain)
 
     chain_string = ''.join(matrix_dict.keys())
-
+    print(chain_string)
     chain_orders = get_all_chain_orders(chain_string)
     
     min_cost = get_chain_cost(chain_orders[0], matrix_dict)
