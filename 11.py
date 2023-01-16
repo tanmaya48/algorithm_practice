@@ -9,10 +9,12 @@ Function signature: def largest_sum_of_nonadjacent_numbers(numbers: List[int]) -
 """
 
 def largest_sum_of_nonadjacent_numbers(numbers):
+    if len(numbers) <1:
+        return 0
     if len(numbers) == 2:
-        return max(numbers[0],numbers[1])
+        return max(numbers[0],numbers[1],0)
     if len(numbers) == 3:
-        return max(numbers[0]+numbers[2],numbers[1])
+        return max(numbers[0]+numbers[2],numbers[1],0)
     
     max_if_taken = numbers[0] + largest_sum_of_nonadjacent_numbers(numbers[2:])
 
