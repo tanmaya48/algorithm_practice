@@ -20,7 +20,6 @@ def get_valid_moves(current_position, current_board, moves = KNIGHT_MOVES):
 
 
 def knights_tour_step(current_position, current_board,current_depth):
-    print(current_depth)
     fill_target = current_board.shape[0]*current_board.shape[1]
     tour_complete = current_depth == fill_target
     if tour_complete:
