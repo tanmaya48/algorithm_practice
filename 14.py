@@ -54,7 +54,7 @@ def n_queens_step(board, N,queen_positions=[]):
 
 
 
-def get_n_queens(N = 12):
+def get_n_queens(N = 8):
     board = np.zeros((N,N),dtype= np.uint8)
     status, queens = n_queens_step(board, N)
     if status:

@@ -48,7 +48,7 @@ def get_knights_tour(start_position = (0,0),board_size = (8,8)):
 
 
 def main():
-    board = get_knights_tour(board_size = (6,6))
+    board = get_knights_tour(board_size = (5,5))
     print(board)
 
 
