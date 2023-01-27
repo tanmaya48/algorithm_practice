@@ -60,7 +60,7 @@ def get_all_brackets(expression):
 
 
 def main():
-    expression = '1+2x3/4'
+    expression = '1+2x3/4-5'
     print(get_all_brackets(expression))
 
 if __name__ == '__main__':
