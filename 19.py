@@ -59,4 +59,9 @@ def get_all_brackets(expression):
     return put_brackets(numbers, symbols)
 
 
-print(get_all_brackets('1+2x3/4'))
+def main():
+    expression = '1+2x3/4'
+    print(get_all_brackets(expression))
+
+if __name__ == '__main__':
+    main()
